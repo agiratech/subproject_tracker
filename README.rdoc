@@ -1,0 +1,25 @@
+= Redmine Subproject Tracker Plugin
+The Subproject Tracker plugin provides an option to create new issues in parent project and will have option to select a sub project in drop down.
+
+== Features
+
+* Sub project selection option to be enabled only for the specific Tracker type
+* Admin should able to set/remove Sub Projects field in the issue form for a Tracker type
+* If a Tracker type have Sub Project option enabled, sub projects dropdown in displayed in the issue
+form for that tracker
+* Plugin can be uninstalled, there will not be any data impact in the main project.
+
+== Plugin support
+
+This plugin is supported by Redmine 3.1.1 and 3.3.1
+
+== Installation Setup
+
+Download and install the plugin into plugins/ directory.
+
+Plugin can be downloaded from {GitHub}[http://github.com/]
+
+Install plugin related migrations using
+  +bundle exec rake redmine:plugins:migrate+
+
+To uninstall the plugin remove plugins/subproject_tracker/ directory
